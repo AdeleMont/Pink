@@ -1,0 +1,143 @@
+.footer {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 40px 0;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    min-width: 640px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__wrapper {
+    min-width: 920px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0;
+  }
+}
+
+.footer__social {
+  padding: 0 50px 0 50px;
+  margin: 0;
+}
+
+.social__list {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.social__item {
+  .list-style();
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url(../img/social-item-vk.svg);
+  }
+  &--telegram {
+    background-image: url(../img/social-item-teleg.svg);
+  }
+  &--youtube {
+    background-image: url(../img/social-item-youtube.svg);
+   }
+
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  width: 55px;
+  height: 54px;
+  margin-right: 7px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 150px;
+  height: 41px;
+  align-self: center;
+}
+
+@media (min-width: @desktop-width) {
+  .footer__logo {
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  min-height: 36px;
+  padding-top: 23px;
+}
+
+.copyright {
+  margin: 0 auto;
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__copyright {
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
+.copyright__text {
+  margin-right: 11px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.copyright__link {
+  display: block;
+}
+
+.copyright__logo-image {
+  display: block;
+  align-self: center;
+}

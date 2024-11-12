@@ -1,0 +1,177 @@
+
+.advantages__tagline-wrapper {
+  margin: 0 auto;
+  padding: 41px 20px 32px;
+  max-width: 940px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__tagline-wrapper {
+    padding: 49px 20px 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__tagline-wrapper {
+    padding: 67px 10px 76px;
+    }
+}
+
+.advantages__tagline {
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  margin: 0 auto 31px;
+
+  &:last-of-type {
+  margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__tagline {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__tagline {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  .list-style();
+  margin: 0 auto;
+  padding: 64px 20px 305px;
+  box-sizing: border-box;
+  background-color: @background-color;
+  background-image: url(../img/phone-filter-hello.png);
+  background-repeat: no-repeat;
+  background-position: center 510px;
+  background-size: 157px auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 55px 20px 45px;
+    box-sizing: border-box;
+    min-height: 485px;
+    width: 660px;
+    background-image: url(../img/phone-filter-hello-tablet.png);
+    background-position: 20px 45px;
+    background-size: 268px 547px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0 0 34px;
+    width: 960px;
+    background-image: none;
+    background-size: auto;
+  }
+}
+
+.advantages__list-wrapper {
+  background-color: @background-color;
+}
+
+
+.advantages__item {
+  align-self: center;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 35px;
+    &:last-child {
+  margin-bottom: 0;
+  }
+  width: 280px;
+  text-align: center;
+
+    p {
+      line-height: 24px;
+      margin: 0;
+      padding: 0;
+    }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    align-self: flex-end;
+    margin-bottom: 0;
+    width: 310px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    padding-top: 339px;
+    width: 240px;
+    line-height: 30px;
+    text-align: center;
+    background-size: 292px 302px;
+
+    &-mood {
+      background-image: url(../img/phone-mood.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center 30px;
+    }
+
+    &-world {
+      background-image: url(../img/phone-world.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center 30px;
+    }
+
+    &-friends {
+      background-image: url(../img/phone-friends.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center 30px;
+    }
+  }
+  p {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+.advantages__title {
+  font-size: 18px;
+  color: @black;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__title {
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

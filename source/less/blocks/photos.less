@@ -1,0 +1,280 @@
+.photos__wrapper {
+  margin-bottom: 2px;
+  margin: 0 auto;
+}
+
+.photos__tagline {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  width: 254px;
+  margin: 44px auto 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__tagline {
+    display: block;
+    padding-top: 92px;
+    padding-bottom: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 550px;
+    line-height: 30px;
+}
+}
+
+.photos__day {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 20px auto;
+}
+
+.photos__day-image {
+  position: relative;
+  width: 320px;
+  height: 137px;
+  align-self: center;
+  &::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+    width: 140px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 4px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: @white;
+    text-transform: uppercase;
+    background-color: @pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos__day-image {
+     width: 660px;
+     height: 285px;
+
+     &::after {
+      top: 57px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__day-image {
+     width: 940px;
+     height: 385px;
+
+     &::after {
+      top: 54px;
+      right: 103px;
+    }
+  }
+}
+
+.photos__image {
+  display: block;
+}
+
+
+@media (min-width: @tablet-width) {
+  .photos__image {
+    width: 300px;
+
+    &--day {
+      width: 660px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__image {
+
+    &--day {
+      width: 940px;
+    }
+  }
+}
+
+.photos__author {
+  position: relative;
+  box-sizing: border-box;
+  width: 280px;
+  height: 159px;
+  align-self: center;
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background-color: @background-color;
+
+  &--day {
+    height: 192px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photos__author {
+    width: 300px;
+
+    &--day {
+      width: 620px;
+      height: 173px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__author {
+    width: 300px;
+
+    &--day {
+      width: 940px;
+      height: 177px;
+    }
+  }
+}
+
+.autor__info {
+  strong {
+  font-size: 14px;
+  line-height: 24px;
+  }
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    left: -2px;
+  }
+}
+
+.author__message {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 253px;
+  left: 3px;
+  top: -2px;
+}
+
+@media (min-width: @tablet-width) {
+  .author__message {
+
+    &--day {
+      width: 520px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .author__message {
+
+    &--day {
+      width: 875px;
+    }
+  }
+}
+
+.author__like-button {
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 12px;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/heart.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.author__like {
+  display: flex;
+  align-items: center;
+  border: 0;
+  position: relative;
+  left: 3px;
+  top: 1px;
+  span {
+    margin-left: 18px;
+    &:last-child {
+      margin: 0;
+    }
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @pink;
+  }
+}
+
+.photos__users {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__users {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__users {
+    width: 940px;
+  }
+}
+
+.photos__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__list {
+    width: 620px;
+    display: grid;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 300px 300px;
+    gap: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__list {
+    width: 940px;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+    /*justify-content: space-between;*/
+  }
+}
+
+.photos__item {
+  align-self: center;
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__item {
+    max-height: 455px;
+    width: 300px;
+  }
+}
+
+
+

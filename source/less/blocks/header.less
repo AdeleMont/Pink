@@ -1,0 +1,138 @@
+.header__wrapper {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  background-color: @medium-grey;
+  background-image: url(../img/background-mobile.jpg);
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+  color: @white;
+  height: 462px;
+}
+
+@media (min-width: 321px) {
+  .header__wrapper {
+    background-image: url(../img/background-tablet.jpg);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__wrapper {
+  background-image: url(../img/background-desktop.jpg);
+  min-width: 1060px;
+  }
+}
+
+.header__main-wrapper {
+    &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/phone-mobile.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 176px;
+    left: 0;
+  }
+}
+
+/* @media (min-width: 400px) {
+.header__main-wrapper {
+  &::after {
+  left: 20%;
+}
+}
+} */
+
+@media (min-width: @tablet-width) {
+  .header__main-wrapper {
+    height: 729px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../img/phone-mobile-tablet.png);
+      background-repeat: no-repeat;
+      width: 660px;
+      height: 545px;
+      top: 184px;
+      left: -2px;
+      }
+    }
+  }
+
+  @media (min-width: 850px) {
+    .header__main-wrapper {
+      &::after {
+        top: 184px;
+        left: 160px;
+        }
+      }
+    }
+
+@media (min-width: @desktop-width) {
+    .header__main-wrapper {
+      height: 823px;
+      &::after {
+        background-image: url(../img/phone-mobile-desktop.png);
+        width: 1050px;
+        height: 645px;
+        top: 178px;
+        left: 150px;
+      }
+  }
+ }
+
+
+ @media (min-width: 1400px) {
+  .header__main-wrapper {
+    &::after {
+      left: 360px;
+    }
+  }
+ }
+
+.header {
+  background-color: @medium-grey;
+  color: @white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__slogan {
+  display: block;
+  height: 58px;
+  width: 240px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  margin-top: 90px;
+}
+
+@media (min-width: @tablet-width) {
+  .header__slogan {
+    display: block;
+    padding-top: 110px;
+    margin-left: 60px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 120%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__slogan {
+    margin-left: 160px;
+    padding-top: 160px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header__slogan {
+    margin-left: 270px;
+  }
+}

@@ -1,0 +1,112 @@
+input[type="range"] {
+  height: 2px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: none;
+      background: @medium-grey;
+      border-radius: 0px;
+    }
+
+    &::-webkit-slider-thumb {
+      box-shadow: none;
+      border: 2px solid @pink;
+      height: 14px;
+      width: 14px;
+      border-radius: 15px;
+      background: @white;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -6px;
+
+      &:active {
+       background: @pink;
+      }
+    }
+
+    &:focus::-webkit-slider-runnable-track {
+      background: @medium-grey;
+    }
+
+    ::-moz-range-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: none;
+      background: @medium-grey;
+      border-radius: 0px;
+      border: none;
+    }
+
+    ::-moz-range-thumb {
+      box-shadow: none;
+      border: 2px solid @pink;
+      height: 14px;
+      width: 14px;
+      border-radius: 15px;
+      background: @white;
+      cursor: pointer;
+
+      &:active {
+        background: @pink;
+      }
+    }
+
+    &::-ms-track {
+      width: 100%;
+      height: 2px;
+      cursor: pointer;
+      animate: 0.2s;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+
+    &::-ms-fill-lower {
+      background: @medium-grey;
+      border: none;
+      border-radius: 15px;
+      box-shadow: none;
+    }
+
+    &::-ms-fill-upper {
+      background: @medium-grey;
+      border: none;
+      border-radius: 15px;
+      box-shadow: none;
+    }
+
+    &::-ms-thumb {
+      margin-top: 1px;
+      box-shadow: none;
+      border: 2px solid @pink;
+      height: 14px;
+      width: 14px;
+      border-radius: 15px;
+      background: @white;
+      cursor: pointer;
+
+      &:active {
+        background: @pink;
+      }
+    }
+
+    &:focus::-ms-fill-lower {
+      background: @medium-grey;
+    }
+
+    &:focus::-ms-fill-upper {
+      background: @medium-grey;
+    }
+}
